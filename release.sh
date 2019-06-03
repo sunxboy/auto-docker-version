@@ -6,7 +6,7 @@ IMAGE=helloworld
 git pull
 
 docker run --rm -v "$PWD":/app treeder/bump patch
-version='cat VERSION'
+version=`cat VERSION`
 echo "version: $version"
 
 ./build.sh
